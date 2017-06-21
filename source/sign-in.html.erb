@@ -1,0 +1,40 @@
+---
+title: Sign in
+layout: primary
+versions: error
+body: sign-in
+---
+
+<div class="container-xs">
+	<div class="box">
+		<hgroup class="box__header is-center">
+			<h1>Sign in</h1>
+			<h4>Log in to your account</h4>
+		</hgroup>
+		<form class="box__content" action="_error">
+			<div class="form-group">
+				<input type="email" class="required <%= version('error','success') %>"
+					name="email" placeholder="Your email address" value="<%= version('error','javier.artero@marsbased.com') %>">
+			</div>
+			<div class="form-group">
+				<input type="password" class="required <%= version('error','warning') %>"
+					name="password" placeholder="Your password" >
+				<% if version('error') %>
+				<div class="info-field">Wrong password.</div>
+				<% end %>
+			</div>
+			<p class="align-center">
+				<button class="btn-primary is-block" type="submit">
+					Log In
+				</button>
+			</p>
+			<p class="align-center">
+				<%= link_to 'I forgot my password', '/reset-password.html' %>
+			</p>
+		</form>
+		<div class="box__footer align-center">
+			<%= link_to 'Create an account', '/sign-up.html',
+			 class:'btn-primary-light is-wide' %>
+		</div>
+	</div>
+</div>

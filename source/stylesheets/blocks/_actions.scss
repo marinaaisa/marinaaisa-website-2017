@@ -1,0 +1,29 @@
+.actions {
+	$margin: .5em;
+
+	text-align: right;
+	margin-right: -$margin;
+	margin-left: -$margin;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: -$margin;
+	position: relative;
+
+	> * {
+		@include last-margin;
+		margin-left: $margin;
+		margin-right: $margin;
+		margin-bottom: $margin;
+	}
+
+	&.has-buttons {
+		margin-top: -.25em;
+	}
+
+	&__item {
+		display: inline-block;
+	}
+}

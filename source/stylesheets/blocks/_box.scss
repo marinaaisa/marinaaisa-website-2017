@@ -1,0 +1,92 @@
+.box {
+	$padding: $gutter;
+	$border-color: $secondary-lighter;
+	$border-radius: 8px;
+
+	padding: $padding;
+	background: white;
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+	margin-bottom: $gutter;
+
+	@include last-margin;
+
+	& > *:first-child {
+ 		margin: -#{$padding} -#{$padding} 0;
+	}
+
+	&__header {
+		min-height: 7rem;
+		padding: $padding/2 $padding;
+		background-color: $background-primary;
+		border-radius: $border-radius $border-radius 0 0;
+		border-bottom: 1px solid $border-color;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		&.is-center{
+			justify-content: center;
+			text-align: center;
+			> *{
+				width: 100%;
+			}
+		}
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__content {
+		padding: $padding $padding 0;
+		margin-left: -$padding;
+		margin-right: -$padding;
+		margin-bottom: $padding;
+		position: relative;
+		@include last-margin;
+	}
+
+	&__footer {
+		border-top: 1px solid $secondary-lighter;
+		padding: $padding;
+		margin-left: -#{$padding};
+		margin-right: -#{$padding};
+		margin-bottom: -#{$padding} !important;
+		border-radius: 0 0 $border-radius $border-radius;
+		@include last-margin;
+	}
+
+	&__nav {
+		text-align: right;
+		> * {
+			margin-left: .5em;
+		}
+	}
+
+	&.is-wide{
+		max-width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.is-transparent {
+		background-color: transparent;
+		border-color: transparent;
+		box-shadow: none;
+		border-radius: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		.box__header {
+			padding-bottom: 0;
+			border-color: transparent;
+		}
+
+		.box__footer {
+			border-color: transparent;
+		}
+	}
+}

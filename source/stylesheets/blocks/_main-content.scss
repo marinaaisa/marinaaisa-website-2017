@@ -1,0 +1,27 @@
+.main-content {
+	$padding: 3rem;
+
+	min-height: 100%;
+	position: relative;
+	padding-top: $padding;
+	padding-bottom: $padding;
+
+	@media (min-width: $grid-breakpoint){
+		padding-top: $padding;
+		min-height: calc(100vh - #{$header-height});
+	}
+
+	&__container {
+		@extend .container;
+	}
+
+	&__header {
+		text-align: center;
+
+		.marsman-template-negative{
+			width: 110px;
+			height: 38px;
+			margin-bottom: 1.5em;
+		}
+	}
+}
