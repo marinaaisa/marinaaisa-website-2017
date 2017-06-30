@@ -1,14 +1,36 @@
 .hero {
-	height: calc(100vh - 20rem); //header + paddings
-  display: table;
   width: 100%;
+  background: $background-secondary;
   text-align: center;
   position: relative;
-  @extend .container;
 
   .hero__content {
-		display: table-cell;
 	  vertical-align: middle;
+    @extend .container;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero__text {
+    position: absolute;
+    bottom: 44%;
+    background: white;
+    padding: 0;
+    width: 30%;
+
+    h1 {
+      margin-bottom: 0;
+      padding: .7rem 2rem;
+      text-align: left;
+      transition:
+        background-color 150ms ease-out,
+        color 150ms ease-out;
+    }
+  }
+
+  .hero__profile {
+    width: 50%;
+    float: right;
   }
 
   .hero__image {
@@ -23,5 +45,15 @@
 
   .hero__button {
   	margin-top: 2em;
+  }
+
+  @keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .hero-text--typing::after {
+    content: '|';
+    animation: blink 500ms infinite;
   }
 }
