@@ -7,16 +7,28 @@
   .hero__content {
 	  vertical-align: middle;
     @extend .container;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .hero__text {
-    position: absolute;
-    bottom: 44%;
+    position: relative;
+    top: 39%;
     background: white;
+    min-height: 74px;
+    margin-bottom: 2rem;
     padding: 0;
-    width: 30%;
+    width: 100%;
+    @media (min-width: $screen-sm){
+      width: 48%;
+      position: absolute;
+      min-height: 0;
+      margin-bottom: 0;
+    }
+    @media (min-width: $screen-md){
+      width: 40%;
+    }
+    @media (min-width: $screen-lg){
+      width: 30%;
+    }
 
     h1 {
       margin-bottom: 0;
@@ -30,7 +42,11 @@
 
   .hero__profile {
     width: 50%;
-    float: right;
+    margin-bottom: -8px;
+    @media (min-width: $screen-sm){
+      float: right;
+      margin-bottom: 0;
+    }
   }
 
   .hero__image {

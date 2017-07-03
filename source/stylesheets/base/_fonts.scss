@@ -6,9 +6,12 @@ $font-base-color:             $secondary-light;
 $font-family-base:            'Graphik Regular', sans-serif;
 $line-height-base:            1.5;
 $fs-base:                     1.6rem;
-$fs-large:                    2rem;
-$fs-small:                    1.3rem;
-$fs-h1:                       3rem;
+$fs-base-responsive:          1.3rem;
+$fs-large:                    3rem;
+$fs-large-responsive:         2rem;
+$fs-small:                    $fs-base-responsive;
+$fs-small-responsive:         1rem;
+$fs-h1:                       $fs-large;
 $fs-h2:                       $fs-large;
 $fs-h3:                       $fs-base;
 $fs-h4:                       $fs-base;
@@ -23,9 +26,12 @@ html {
 
 body {
   font-family: $font-family-base;
-  font-size: $fs-base;
+  font-size: $fs-base-responsive;
   color: $font-base-color;
   line-height: $line-height-base;
+  @media (min-width: $screen-sm){
+    font-size: $fs-base;
+  }
 }
 
 @mixin content-blocks{
@@ -63,10 +69,13 @@ blockquote {
 }
 
 h1,.h1{
-  font-size: $fs-h1;
+  font-size: $fs-large-responsive;
   margin-top: 0;
   font-weight: 500;
   margin-bottom: 1rem;
+  @media (min-width: $screen-sm){
+    font-size: $fs-h1;
+  }
 }
 
 h2,.h2{

@@ -3,11 +3,42 @@ title: Coming Soon 2017
 body: home
 layout: home
 ---
-<div class="hero" id ="hero">
+<div class="hero" id="hero">
 	<div class="hero__content">
+    <img src="/images/marina-aisa-photo.png" class="hero__profile" alt="Marina Aisa Picture" />
     <div class="hero__text">
       <h1 id="hero-text"></h1>
     </div>
-		<img src="../images/marina-aisa-photo.png" class="hero__profile" alt="Marina Aisa Picture" />
 	</div>
+</div>
+<div id="portfolio" class="portfolio">
+  <div class="portfolio__title">
+    <h1>Design Portfolio ✍</h1>
+  </div>
+  <div class="portfolio__content">
+    <% data.portfolio.each do |s| %>
+      <div href="<%= s.url %>" class="portfolio__item-<%= s.col %>">
+        <a class="portfolio__image portfolio__hover-<%= s.name %>">
+          <img src="/images/<%= s.img %>.png">
+        </a>
+        <div class="portfolio__description">
+          <%= s.des %>
+        </div>
+        <div class="portfolio__client">
+          <%= s.client %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="call-to-action">
+  <div class="call-to-action__content">
+    <div class="call-to-action__img">
+      <img src="/images/img-portfolio-12.png">
+    </div>
+    <div class="call-to-action__text">
+      If you want to check more designs that I have done,
+      check my Dribbble.
+    </div>
+  </div>
 </div>
