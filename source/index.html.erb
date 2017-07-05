@@ -19,7 +19,10 @@ layout: home
     <% data.portfolio.each do |s| %>
       <div href="<%= s.url %>" class="portfolio__item-<%= s.col %>">
         <a class="portfolio__image portfolio__hover-<%= s.name %>">
-          <img src="/images/<%= s.img %>.png">
+          <div class="portfolio__thumb-inner">
+            <div class="portfolio__thumb-hover" style="background-color: <%= s.color %>"></div>
+            <img alt="<%= s.name %>" src="/images/<%= s.img %>.png">
+          </div>
         </a>
         <div class="portfolio__description">
           <%= s.des %>
