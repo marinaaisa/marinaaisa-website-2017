@@ -6,7 +6,7 @@
   &__title {
     margin: 20px 0 30px 0;
     color: $background-secondary;
-    font-family: Graphik Semibold;
+    font-family: $font-family-semibold;
     @media (min-width: $screen-sm){
       margin: 70px 0 30px 0;
     }

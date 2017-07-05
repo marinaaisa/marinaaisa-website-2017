@@ -1,37 +1,21 @@
 .call-to-action {
   background: $background-secondary;
 
-  &__title {
-    margin: 20px 0 30px 0;
-    color: $background-secondary;
-    font-family: Graphik Semibold;
-    @media (min-width: $screen-sm){
-      margin: 70px 0 30px 0;
+  &__content {
+    @extend .container;
+    display: table;
+  }
+  &__img {
+    float: left;
+
+    img {
+      width: 50%;
     }
   }
-
-  &__content {
-	  vertical-align: middle;
-    padding-left: 0;
-    padding-right: 0;
-    @include make-row();
-    @extend .container;
-  }
-  &__item-12 {
-    @include make-sm-column(12);
-    @include margin-bottom(20px);
-  }
-  &__item-6 {
-    @include make-sm-column(6);
-    @include margin-bottom(20px);
-  }
-  &__image {
-    margin-bottom: 1rem;
-  }
-  &__client {
-    float: right;
-  }
-  &__description {
-    float: left;
+  &__text {
+    width: 37%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
   }
 }

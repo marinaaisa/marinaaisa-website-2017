@@ -1,0 +1,27 @@
+<% data.work_experience.each do |s| %>
+<li class="experience-inverted">
+  <div class="experience__timeplace">
+    <div class="experience__place">
+      <%= s.place %>
+    </div>
+    <div class="experience__time">
+      <%= s.time %>
+    </div>
+  </div>
+  <div class="experience__image">
+    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="Navhy Logo">
+  </div>
+  <div class="experience__panel">
+    <div class="experience-title">
+      <h4><%= s.position %></h4>
+    </div>
+    <div class="experience__company">
+      <h4><%= s.company %></h4>
+    </div>
+    <div class="experience-body">
+      <p class="text-muted"><%= s.description %>
+      </p>
+    </div>
+  </div>
+</li>
+<% end %>
