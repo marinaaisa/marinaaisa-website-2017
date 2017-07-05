@@ -3,7 +3,7 @@
   img: img-portfolio-12
   des: iOS app product design
   client: The Dream
-  color: "black"
+  color: "#3275FF"
 - name: ios-thedream2
   col: "6"
   img: img-portfolio-12
@@ -14,4 +14,10 @@
   img: img-portfolio-12
   des: iOS app product design
   client: The Dream
+- name: ios-thedream
+  col: "12"
+  img: img-portfolio-12
+  des: iOS app product design
+  client: The Dream
+  color: "#3275FF"
 

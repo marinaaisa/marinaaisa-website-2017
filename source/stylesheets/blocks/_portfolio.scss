@@ -62,4 +62,21 @@
       opacity: 1;
     }
   }
+
+  &__thumb-description {
+    position: absolute;
+    bottom: 5.8rem;
+    left: 4rem;
+    line-height: initial;
+    text-align: left;
+    color: white;
+    font-family: $font-family-light;
+  }
+  &__thumb-client {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 4rem;
+    text-align: left;
+    color: white;
+  }
 }

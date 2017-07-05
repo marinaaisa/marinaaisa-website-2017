@@ -1,10 +1,12 @@
 @include font-face(Graphik Bold, fonts/Graphik-Bold);
 @include font-face(Graphik Semibold, fonts/Graphik-Semibold);
 @include font-face(Graphik Regular, fonts/Graphik-Regular);
+@include font-face(Graphik Light, fonts/Graphik-Light);
 
 $font-base-color:             $secondary-light;
 $font-family-base:            'Graphik Regular', sans-serif;
 $font-family-semibold:        'Graphik Semibold', sans-serif;
+$font-family-light:           'Graphik Light', sans-serif;
 $line-height-base:            1.5;
 $fs-base:                     1.6rem;
 $fs-base-responsive:          1.3rem;

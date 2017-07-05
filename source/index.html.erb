@@ -20,7 +20,14 @@ layout: home
       <div href="<%= s.url %>" class="portfolio__item-<%= s.col %>">
         <a class="portfolio__image portfolio__hover-<%= s.name %>">
           <div class="portfolio__thumb-inner">
-            <div class="portfolio__thumb-hover" style="background-color: <%= s.color %>"></div>
+            <div class="portfolio__thumb-hover" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, <%= s.color %> 70%);">
+              <h2 class="portfolio__thumb-description">
+                <%= s.des %>
+              </h2>
+              <h3 class="portfolio__thumb-client">
+                Client: <%= s.client %>
+              </h3>
+            </div>
             <img alt="<%= s.name %>" src="/images/<%= s.img %>.png">
           </div>
         </a>
