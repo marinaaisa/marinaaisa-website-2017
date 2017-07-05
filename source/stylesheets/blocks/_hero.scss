@@ -29,6 +29,9 @@
     @media (min-width: $screen-lg){
       width: 30%;
     }
+    @media (min-width: $screen-xlg){
+      width: 40rem;
+    }
 
     h1 {
       margin-bottom: 0;

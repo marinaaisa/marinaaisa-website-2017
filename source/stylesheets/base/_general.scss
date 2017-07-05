@@ -37,18 +37,56 @@ body {
   }
 }
 
-::selection { background: lighten($secondary,70%); }
+::selection { background: $secondary; }
 
-a,
-.link{
+a {
   text-decoration: none;
   color: $secondary;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   &:hover,
   &.active,
   &:focus{
     outline: 0;
     text-decoration: underline;
   }
+  &.ani {
+    text-decoration: none;
+    &:hover {
+      color: lighten($secondary,20%);
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      zoom: 1;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1.5px;
+        width: 0;
+        background-color: lighten($secondary,20%);
+        -webkit-transition-property: width;
+        -moz-transition-property: width;
+        -o-transition-property: width;
+        transition-property: width;
+        -webkit-transition-duration: .4s;
+        -moz-transition-duration: .4s;
+        -o-transition-duration: .4s;
+        transition-duration: .4s;
+      }
+    }
+  }
+}
+a.ani:hover span:after {
+  width: 100%;
 }
 
 .fa{
