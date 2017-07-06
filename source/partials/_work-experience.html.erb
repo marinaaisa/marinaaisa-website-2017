@@ -1,11 +1,11 @@
 <% data.work_experience.each do |s| %>
-<li class="experience-inverted">
-  <div class="experience__timeplace">
+<li class="experience__item--<%= s.active %>">
+  <div class="experience__time-place">
     <div class="experience__place">
       <%= s.place %>
     </div>
     <div class="experience__time">
-      <%= s.time %>
+      <%= s.starting_time %> - <span class="<%= s.active %>"><%= s.finish_time %></span>
     </div>
   </div>
   <div class="experience__image">

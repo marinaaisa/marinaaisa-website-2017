@@ -1,8 +1,7 @@
 .about {
   position: relative;
 
-  .about__content {
-	  vertical-align: middle;
+  &__container {
     @extend .container;
   }
 
@@ -15,7 +14,7 @@
     }
   }
 
-  .about__text {
+  &__content {
     font-size: $fs-base;
     line-height: 1.7;
     font-weight: initial;
@@ -25,7 +24,7 @@
     }
   }
 
-  .about__profile {
+  &__profile {
     width: 50%;
     margin-bottom: -8px;
     @media (min-width: $screen-sm){
@@ -34,7 +33,7 @@
     }
   }
 
-  .about__image {
+  &__image {
   	height: 90px;
   	width: auto;
   	@include margin-bottom(50px);
@@ -44,7 +43,7 @@
     }
   }
 
-  .about__button {
+  &__button {
   	margin-top: 2em;
   }
 }

@@ -27,9 +27,6 @@
     @include make-sm-column(6);
     @include margin-bottom(20px);
   }
-  &__image {
-    margin-bottom: 1rem;
-  }
   &__client {
     float: right;
     @media (min-width: $screen-sm){
@@ -46,6 +43,13 @@
     position: relative;
     font-size: 0;
     line-height: 0;
+    display: block;
+
+    &:hover {
+      .portfolio__thumb-hover {
+        opacity: 1;
+      }
+    }
   }
 
   &__thumb-hover {
@@ -57,10 +61,6 @@
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   &__thumb-description {
