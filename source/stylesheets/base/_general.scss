@@ -63,14 +63,13 @@ a {
     }
     span {
       display: inline-block;
-      vertical-align: middle;
-      zoom: 1;
       position: relative;
       &:after {
         content: "";
         display: block;
         position: absolute;
         height: 1.5px;
+        bottom: .4px;
         width: 0;
         background-color: lighten($secondary,20%);
         -webkit-transition-property: width;
