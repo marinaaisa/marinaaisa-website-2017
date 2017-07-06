@@ -67,7 +67,6 @@
     text-align: left;
   }
   &__image {
-    border: 5px solid white;
     position: relative;
     @include make-sm-column(1, 0);
     @media (max-width: $screen-sm){
@@ -77,13 +76,13 @@
       content: " ";
       display: block;
       position: absolute;
-      top: -16px;
-      left: -11px;
-      height: 140%;
+      top: -9px;
+      left: -9px;
+      height: calc(100% + 14px);
       border-radius: 100%;
       background: white;
       border: 2px solid #f1f1f1;
-      width: 127%;
+      width: calc(100% + 14px);
 
       .experience__item--active & {
         border: 2px solid $secondary;
@@ -98,7 +97,6 @@
       margin-left: 0;
       border-radius: 100%;
       text-align: center;
-      background-color: #28292D;
       float: left;
     }
   }
