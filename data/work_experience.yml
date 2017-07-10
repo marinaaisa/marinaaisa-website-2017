@@ -2,13 +2,14 @@
   companyurl: http://thedreamvr.com/
   position: VR / Mobile Product Designer
   description: The Dream VR is the first Virtual Reality and 360º TV in the world.
-  learnt: "#VR, #VRDesign, #UnityGraphics"
+  learnt: "#VR #VRDesign #UnityGraphics"
   place: Barcelona, ESP
   starting_time: Feb’17
   finish_time: today
   active: active
   image: thedream
 - company: MarsBased
+  companyurl: https://marsbased.com/
   position: UI/UX Designer & Front-End Developer
   description: MarsBased is a development consultancy from Barcelona offering end‑to‑end web & mobile apps.
   learnt: "#SCSS #Middleman #BEM #Ionic #git #SASS #AtomicDesign #RemoteWork #QualityOfCode"
@@ -17,6 +18,7 @@
   finish_time: Feb’17
   image: marsbased
 - company: Midealab
+  companyurl: https://www.midealab.co/
   position: UI/UX Designer & Front-End Developer
   description: Midealab is a venture builder company with studios in Helsinki, Tallin and Lviv.
   learnt: "#HTML #CSS #ProductDesign"
@@ -24,9 +26,21 @@
   starting_time: Jan´16
   finish_time: Jun´16
   image: midealab
-- company: The Dream VR
-  position: VR / Mobile Product Designer
-  description: The Dream VR is the first Virtual Reality and 360º TV in the world. Here is where I learnt #VR #VRDesign.
-  place: Barcelona
-  starting_time: Feb’17
-  finish_time: today
+- company: Microsoft
+  companyurl: https://www.microsoft.com/
+  position: Product Design Intern
+  description: I joined the Microsoft's UX and Interaction design team at Nokia House after being hired by Nokia.
+  place: Helsinki, FIN
+  learnt: "#UXdesign #ProductDesign #Corporate"
+  starting_time: May’14
+  finish_time: Oct’14
+  image: microsoft
+- company: FastMonkeys
+  companyurl: http://www.fastmonkeys.com/
+  position: UI/UX Designer
+  description: FastMonkeys is a python development company offering web & mobile apps.
+  place: Helsinki, FIN
+  learnt: "#UI/UXdesign #HowToStudyandWorkWhileYouAreAbroad"
+  starting_time: Dic’13
+  finish_time: Dic’15
+  image: fastmonkeys
