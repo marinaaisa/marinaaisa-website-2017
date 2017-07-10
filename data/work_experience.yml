@@ -1,25 +1,28 @@
 - company: The Dream VR
+  companyurl: http://thedreamvr.com/
   position: VR / Mobile Product Designer
   description: The Dream VR is the first Virtual Reality and 360º TV in the world.
-  learnt: "#VR, #Design"
-  place: Barcelona
+  learnt: "#VR, #VRDesign, #UnityGraphics"
+  place: Barcelona, ESP
   starting_time: Feb’17
   finish_time: today
   active: active
   image: thedream
-- company: The Dream VR
-  position: VR / Mobile Product Designer
-  description: The Dream VR is the first Virtual Reality and 360º TV in the world. Here is where I learnt #VR #VRDesign.
-  place: Barcelona
-  starting_time: Feb’17
-  finish_time: today
+- company: MarsBased
+  position: UI/UX Designer & Front-End Developer
+  description: MarsBased is a development consultancy from Barcelona offering end‑to‑end web & mobile apps.
+  learnt: "#SCSS #Middleman #BEM #Ionic #git #SASS #AtomicDesign #RemoteWork #QualityOfCode"
+  place: Barcelona, ESP & Brussels, BEL
+  starting_time: Jun’16
+  finish_time: Feb’17
   image: marsbased
-- company: The Dream VR
-  position: VR / Mobile Product Designer
-  description: The Dream VR is the first Virtual Reality and 360º TV in the world. Here is where I learnt #VR #VRDesign.
-  place: Barcelona
-  starting_time: Feb’17
-  finish_time: today
+- company: Midealab
+  position: UI/UX Designer & Front-End Developer
+  description: Midealab is a venture builder company with studios in Helsinki, Tallin and Lviv.
+  learnt: "#HTML #CSS #ProductDesign"
+  place: Helsinki, FI
+  starting_time: Jan´16
+  finish_time: Jun´16
   image: midealab
 - company: The Dream VR
   position: VR / Mobile Product Designer
