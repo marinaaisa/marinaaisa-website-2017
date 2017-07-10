@@ -8,7 +8,7 @@
 
   &__title {
     margin: 2rem 0 5rem 0;
-    color: $background-secondary;
+    color: $secondary;
     font-family: $font-family-semibold;
     @media (min-width: $screen-sm){
       margin: 7rem 0 5rem 0;
@@ -30,7 +30,7 @@
     width: 2px;
     display: block;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: $secondary-lighter;
     }
 
     > li {
@@ -55,7 +55,7 @@
   }
   &__time {
     .active {
-      color: $secondary;
+      color: $primary;
     }
   }
 
@@ -76,16 +76,16 @@
       content: " ";
       display: block;
       position: absolute;
-      top: -9px;
-      left: -9px;
-      height: calc(100% + 14px);
+      top: -5px;
+      left: -5px;
+      height: calc(100% + 6px);
       border-radius: 100%;
       background: white;
-      border: 2px solid #f1f1f1;
-      width: calc(100% + 14px);
+      border: 2px solid $secondary-lighter;
+      width: calc(100% + 6px);
 
       .experience__item--active & {
-        border: 2px solid $secondary;
+        border: 2px solid $primary;
       }
     }
 
@@ -99,5 +99,15 @@
       text-align: center;
       float: left;
     }
+  }
+  &__position,
+  &__place {
+    color: $secondary;
+  }
+  &__description {
+    font-family: $font-family-light;
+  }
+  &__learnt {
+    color: $secondary;
   }
 }

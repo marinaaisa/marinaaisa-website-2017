@@ -1,12 +1,12 @@
 //COLORS
-$primary:             #FF4D74;
-$primary-light:       #F1C3BF;
-$primary-lighter:     #F9F2F2;
-$secondary:           #5a46ff;
+$primary:             #5a46ff;
+$primary-light:       lighten($primary,20%);
+$primary-lighter:     lighten($primary,30%);
+$secondary:           #161618;
 $secondary-light:     #9a9a9a;
-$secondary-lighter:   #E6E9EE;
+$secondary-lighter:   #e4e4e4;
 $background-primary:  #FFFFFF;
-$background-secondary:#161618;
+$background-secondary:$secondary;
 $success:             #57BC27;
 $warning:             #F9B13D;
 $text-negative:       white;
@@ -25,7 +25,7 @@ $colors:  "primary" $primary $text-negative,
           "success" $success $text-negative,
           "warning" $warning $text-negative;
 
-$gutter: 									  2.4rem;
+$gutter: 				  2.4rem;
 $header-height:             7rem;
 $header-height-breakpoint:  5rem;
 $nav-responsive-width:      26rem;

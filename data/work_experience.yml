@@ -1,6 +1,7 @@
 - company: The Dream VR
   position: VR / Mobile Product Designer
-  description: The Dream VR is the first Virtual Reality and 360º TV in the world. Here is where I learnt #VR #VRDesign.
+  description: The Dream VR is the first Virtual Reality and 360º TV in the world.
+  learnt: "#VR, #Design"
   place: Barcelona
   starting_time: Feb’17
   finish_time: today
@@ -12,12 +13,14 @@
   place: Barcelona
   starting_time: Feb’17
   finish_time: today
+  image: marsbased
 - company: The Dream VR
   position: VR / Mobile Product Designer
   description: The Dream VR is the first Virtual Reality and 360º TV in the world. Here is where I learnt #VR #VRDesign.
   place: Barcelona
   starting_time: Feb’17
   finish_time: today
+  image: midealab
 - company: The Dream VR
   position: VR / Mobile Product Designer
   description: The Dream VR is the first Virtual Reality and 360º TV in the world. Here is where I learnt #VR #VRDesign.
