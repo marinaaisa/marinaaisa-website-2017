@@ -1,0 +1,29 @@
+<% data.education_experience.each do |s| %>
+<li class="experience__item--<%= s.active %>">
+  <div class="experience__time-place">
+    <div class="experience__place">
+      <%= s.place %>
+    </div>
+    <div class="experience__time">
+      <%= s.start_time %> - <span class="<%= s.active %>"><%= s.finish_time %></span>
+    </div>
+  </div>
+  <div class="experience__image">
+    <img class="img-circle img-responsive" src="images/work-experience/<%= s.image %>.png" alt="<%= s.company %>">
+  </div>
+  <div class="experience__panel">
+    <div class="experience__studies">
+      <h4><%= s.studies %> —
+      <a target="_blank" href="<%= s.universityurl %>" class="experience__university ani">
+        <span><%= s.university %></span>
+      </a>
+    </h4>
+    </div>
+    <div class="experience__description">
+      <p>
+        <%= s.description %> Here is where I learnt <span class="experience__learnt"><%= s.learnt %></span>
+      </p>
+    </div>
+  </div>
+</li>
+<% end %>

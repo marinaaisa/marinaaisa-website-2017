@@ -21,5 +21,10 @@
     text-align: center;
     position: relative;
     z-index: 1000;
+      p {
+        background-color: black;
+        padding: 2rem;
+        margin: 0;
+      }
   }
 }
