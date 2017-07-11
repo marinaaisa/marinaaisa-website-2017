@@ -12,26 +12,19 @@
     position: absolute;
     font-size: 10vw; // rand 8,9,10
     animation: 10s floatUp ease-in infinite;
-    top: 100%;
+    top: calc(100% + 2em);
     &:before {
       display: inline-block;
-    }
-    &:nth-child(odd):before {
-      animation: 40s slowRotate linear;
-    }
-    &:nth-child(even):before {
-      animation: 30s slowRotate linear;
-      animation-direction: reverse;
     }
   }
 }
 
 @keyframes floatUp {
-  0% { top: 110%; top: calc(100% + 2em); }
-  100% { top: -25%; top: -2em; }
+  0% { top: calc(100% + 2em); transform: rotate(0deg);}
+  100% { top: -2em; transform: rotate(359deg); }
 }
 
 @keyframes slowRotate {
-    0% { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); }
   100% { transform: rotate(359deg); }
 }
