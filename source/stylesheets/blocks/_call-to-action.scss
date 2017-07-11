@@ -4,6 +4,8 @@
   &__content {
     @extend .container;
     display: table;
+    position: relative;
+    height: 17rem;
   }
   &__img {
     float: left;
@@ -13,9 +15,9 @@
     }
   }
   &__text {
-    width: 37%;
+    width: 100%;
     display: table-cell;
     vertical-align: middle;
-    text-align: right;
+    text-align: center;
   }
 }
