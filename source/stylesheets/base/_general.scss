@@ -37,55 +37,9 @@ body {
   }
 }
 
-::selection { background: $primary; }
-
-a {
-  text-decoration: none;
-  color: $primary;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  &:hover,
-  &.active,
-  &:focus{
-    outline: 0;
-    text-decoration: underline;
-  }
-  &.ani {
-    text-decoration: none;
-    &:hover {
-      color: $primary-light;
-    }
-    span {
-      display: inline-block;
-      position: relative;
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 1.5px;
-        bottom: .4px;
-        width: 0;
-        background-color: $primary-light;
-        -webkit-transition-property: width;
-        -moz-transition-property: width;
-        -o-transition-property: width;
-        transition-property: width;
-        -webkit-transition-duration: .4s;
-        -moz-transition-duration: .4s;
-        -o-transition-duration: .4s;
-        transition-duration: .4s;
-      }
-    }
-  }
-}
-a.ani:hover span:after {
-  width: 100%;
+::selection { 
+  background: $primary;
+  color: white;
 }
 
 .fa{
