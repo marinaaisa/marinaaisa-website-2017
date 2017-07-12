@@ -1,16 +1,18 @@
 - university: Everywhere
   studies: Self-learning
-  description: This is how I most learn UI/UX design, front-end development and contancy. I like going to meet ups where I can learnt from others.
-  learnt: "#React #React-Sketch #UIAnimation"
-  place: Anywhere
-  start_time: Always
+  description: This is how I learnt the 80% of what I know now and how I improve it.
+  learnt: "#ProductDesign #Prototyping #Coding"
+  place: Everywhere
+  finish_time: Always
   active: active
   image: self-learning
-- university: Hong Kong University of Science & Tech.
+  selflearning: From each job, class, co-worker, book, article, meet-up or life experience
+  learning: "#Unity #React #React-Sketch #UIAnimation #Prototyping"
+- university: Hong Kong University of Science & Technology (HKUST)
   universityurl: http://www.ust.hk/
   studies: Engineering Exchange Student
-  description: The Dream VR is the first Virtual Reality and 360º TV in the world.
-  learnt: "#React #React-Sketch #UIAnimation"
+  description: Exchange student for one semester at one of the top universities in Asia.
+  learnt: "#ProductDesign #Innovation #EngineeringSubjects #SurviveInHongKongAndAsia #CulturalDiversity"
   place: Hong Kong, HK
   start_time: Aug'15
   finish_time: Jan'16
@@ -18,9 +20,9 @@
 - university: Helsinki Metropolia University
   universityurl: http://www.metropolia.fi/en/
   studies: Media Engineering, Bachelor Degree
-  description: The Dream VR is the first Virtual Reality and 360º TV in the world.
-  learnt: "#React #React-Sketch #UIAnimation"
+  description: I studied my university degree in the largest and the most international University of Applied Sciences in Finland.
+  learnt: "#EngineeringSubjects #BasicsOfProgramming #StudyAndLiveAbroad #CulturalDiversity #SurviveFinnishWinters #GrowingAsAPerson"
   place: Helsinki, FIN
   start_time: Aug'13
   finish_time: Dec'16
-  image: hkust
+  image: metropolia

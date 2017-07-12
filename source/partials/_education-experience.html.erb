@@ -5,7 +5,7 @@
       <%= s.place %>
     </div>
     <div class="experience__time">
-      <%= s.start_time %> - <span class="<%= s.active %>"><%= s.finish_time %></span>
+      <%= s.start_time %> <% unless s.selflearning %>-<% end %> <span class="<%= s.active %>"><%= s.finish_time %></span>
     </div>
   </div>
   <div class="experience__image">
@@ -14,14 +14,25 @@
   <div class="experience__panel">
     <div class="experience__studies">
       <h4><%= s.studies %> —
-      <a target="_blank" href="<%= s.universityurl %>" class="experience__university ani">
-        <span><%= s.university %></span>
-      </a>
+      <% if s.selflearning %>
+        <%= s.selflearning %>
+      <% else %>
+        <a target="_blank" href="<%= s.universityurl %>" class="experience__university ani">
+          <span><%= s.university %></span>
+        </a>
+      <% end %>
     </h4>
     </div>
     <div class="experience__description">
       <p>
-        <%= s.description %> Here is where I learnt <span class="experience__learnt"><%= s.learnt %></span>
+        <%= s.description %> 
+        <% unless s.selflearning %>
+          Here is where I learnt <span class="experience__learnt"><%= s.learnt %></span>
+        <% end %>
+        <% if s.learning %>
+          <br>
+          At the moment, I'm learning <span class="experience__learnt"><%= s.learning %></span>
+        <% end %>
       </p>
     </div>
   </div>

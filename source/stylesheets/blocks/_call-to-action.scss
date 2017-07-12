@@ -1,5 +1,5 @@
 .call-to-action {
-  background: $background-secondary;
+  background: $background-primary-darker;
 
   &__content {
     @extend .container;
@@ -22,7 +22,7 @@
     position: relative;
     z-index: 1000;
       p {
-        background-color: black;
+        background-color: $background-primary;
         padding: 2rem;
         margin: 0;
       }
