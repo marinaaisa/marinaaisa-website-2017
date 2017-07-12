@@ -7,24 +7,36 @@
     position: relative;
     height: 17rem;
   }
-  &__img {
-    float: left;
-
+  &__image {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5rem 5rem 5rem 0;
     img {
       width: 50%;
     }
   }
-  &__text {
+  &__text--dribbble {
     width: 100%;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     position: relative;
     z-index: 1000;
-      p {
-        background-color: $background-primary;
-        padding: 2rem;
-        margin: 0;
-      }
+    p {
+      background-color: $background-primary;
+      padding: 2rem;
+      margin: 0;
+    }
+  }
+  &__text--professionals {
+    width: 40%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    position: relative;
+    z-index: 1000;
+    p {
+      margin: 0;
+    }
   }
 }

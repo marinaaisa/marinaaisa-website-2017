@@ -55,6 +55,17 @@ a {
       background-color: lighten(#ea4c89,10%);
     }
   }
+  &.linkedin {
+    color: #0077B5;
+    &:hover,
+    &.active,
+    &:focus{
+      color: lighten(#0077B5,10%);
+    }
+    span:after {
+      background-color: lighten(#0077B5,10%);
+    }
+  }
 }
 a.ani:hover span:after {
   width: 100%;
