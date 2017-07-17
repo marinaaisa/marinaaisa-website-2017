@@ -1,124 +1,48 @@
-var map = AmCharts.makeChart("mapdiv",{
-type: "map",
-theme: "light",
-projection: "mercator",
-panEventsEnabled : false,
-backgroundColor : "#FFFFFF",
-backgroundAlpha : 1,
-zoomControl: {
-zoomControlEnabled : false,
-homeButtonEnabled : false
-},
-dataProvider : {
-map : "worldHigh",
-getAreasFromMap : true,
-areas :
-[
-	{
-		"id": "AT",
-		"showAsSelected": true
-	},
-	{
-		"id": "BE",
-		"showAsSelected": true
-	},
-	{
-		"id": "BG",
-		"showAsSelected": true
-	},
-	{
-		"id": "CZ",
-		"showAsSelected": true
-	},
-	{
-		"id": "EE",
-		"showAsSelected": true
-	},
-	{
-		"id": "FI",
-		"showAsSelected": true
-	},
-	{
-		"id": "FR",
-		"showAsSelected": true
-	},
-	{
-		"id": "DE",
-		"showAsSelected": true
-	},
-	{
-		"id": "HU",
-		"showAsSelected": true
-	},
-	{
-		"id": "IE",
-		"showAsSelected": true
-	},
-	{
-		"id": "IT",
-		"showAsSelected": true
-	},
-	{
-		"id": "NL",
-		"showAsSelected": true
-	},
-	{
-		"id": "NO",
-		"showAsSelected": true
-	},
-	{
-		"id": "RU",
-		"showAsSelected": true
-	},
-	{
-		"id": "ES",
-		"showAsSelected": true
-	},
-	{
-		"id": "SE",
-		"showAsSelected": true
-	},
-	{
-		"id": "CH",
-		"showAsSelected": true
-	},
-	{
-		"id": "UA",
-		"showAsSelected": true
-	},
-	{
-		"id": "GB",
-		"showAsSelected": true
-	},
-	{
-		"id": "CN",
-		"showAsSelected": true
-	},
-	{
-		"id": "ID",
-		"showAsSelected": true
-	},
-	{
-		"id": "MY",
-		"showAsSelected": true
-	},
-	{
-		"id": "TH",
-		"showAsSelected": true
-	},
-	{
-		"id": "VN",
-		"showAsSelected": true
-	}
-]
-},
-areasSettings : {
-autoZoom : false,
-color : "#e4e4e4",
-colorSolid : "#84ADE9",
-selectedColor : "#5a46ff",
-outlineColor : "#666666",
-rollOverColor : "#b5acff",
-rollOverOutlineColor : "#000000"
-}
+$(function(){
+  new jvm.Map({
+    map: 'world_mill',
+    container: $('#map'),
+    backgroundColor: 'transparent',
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: '#e4e4e4'
+      },
+    },
+    series: {
+      regions: [{
+        scale: {
+          'LIVED': '#161618',
+          'VISITED': '#5a46ff'
+        },
+        attribute: 'fill',
+        values: {
+          BE: 'LIVED',
+          CN: 'LIVED',
+          FI: 'LIVED',
+          ES: 'LIVED',
+          AT: 'VISITED',
+          BG: 'VISITED',
+          CZ: 'VISITED',
+          EE: 'VISITED',
+          FR: 'VISITED',
+          DE: 'VISITED',
+          HU: 'VISITED',
+          IE: 'VISITED',
+          IT: 'VISITED',
+          NL: 'VISITED',
+          NO: 'VISITED',
+          RU: 'VISITED',
+          SE: 'VISITED',
+          CH: 'VISITED',
+          UA: 'VISITED',
+          GB: 'VISITED',
+          ID: 'VISITED',
+          MY: 'VISITED',
+          TH: 'VISITED',
+          VN: 'VISITED',
+        }
+      }]
+    }
+  });
 });

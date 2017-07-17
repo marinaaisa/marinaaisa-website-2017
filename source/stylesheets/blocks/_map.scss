@@ -34,9 +34,11 @@
     float: none!important;
   	&--visited {
       color: $primary;
+      font-family: $font-family-base;
     }
     &--lived {
       color: $secondary;
+      font-family: $font-family-base;
     }
   }
 }
