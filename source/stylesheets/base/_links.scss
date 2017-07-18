@@ -66,6 +66,17 @@ a {
       background-color: lighten(#0077B5,10%);
     }
   }
+  &.twitter {
+    color: #00aced;
+    &:hover,
+    &.active,
+    &:focus{
+      color: lighten(#00aced,10%);
+    }
+    span:after {
+      background-color: lighten(#00aced,10%);
+    }
+  }
 }
 a.ani:hover span:after {
   width: 100%;
