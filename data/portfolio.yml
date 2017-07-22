@@ -1,23 +1,21 @@
-- name: ios-thedream
+- name: decidim
   col: "12"
-  img: img-portfolio-12
-  des: iOS app product design
-  client: The Dream
-  color: "#3275FF"
-- name: ios-thedream2
-  col: "6"
-  img: img-portfolio-12
-  des: iOS app product design
-  client: The Dream
-- name: ios-thedream3
-  col: "6"
-  img: img-portfolio-12
-  des: iOS app product design
-  client: The Dream
-- name: ios-thedream
+  img: decidim.jpg
+  des: Decidim.cat – website project
+  client: Barcelona City Hall (working in MarsBased)
+  color_bg: "#FCE4E0"
+  color_text_dark: true
+- name: decidim
   col: "12"
-  img: img-portfolio-12
-  des: iOS app product design
-  client: The Dream
-  color: "#3275FF"
-
+  img: decidim.jpg
+  des: Decidim.cat whole website project
+  client: Barcelona City Hall (working in MarsBased)
+  color_bg: "#D90B36"
+  color_text_dark: false
+- name: decidim
+  col: "12"
+  img: decidim.jpg
+  des: Decidim.cat whole website project
+  client: Barcelona City Hall (working in MarsBased)
+  color_bg: "#FCE4E0"
+  color_text_dark: true

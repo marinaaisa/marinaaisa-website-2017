@@ -1,15 +1,15 @@
 <% data.portfolio.each do |s| %>
   <div class="portfolio__item-<%= s.col %>">
     <a href="<%= s.url %>" class="portfolio__thumb-inner">
-      <div class="portfolio__thumb-hover" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, <%= s.color %> 70%);">
-        <h2 class="portfolio__thumb-description">
+      <div class="portfolio__thumb-hover" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, <%= s.color_bg %> 70%);">
+        <h3 class="portfolio__thumb-description<% if s.color_text_dark %>--dark<% end %>">
           <%= s.des %>
-        </h2>
-        <h3 class="portfolio__thumb-client">
+        </h3>
+        <h3 class="portfolio__thumb-client<% if s.color_text_dark %>--dark<% end %>">
           Client: <%= s.client %>
         </h3>
       </div>
-      <img alt="<%= s.name %>" src="/images/<%= s.img %>.png">
+      <img alt="<%= s.name %>" src="/images/portfolio/<%= s.img %>">
     </a>
     <div class="portfolio__description">
       <%= s.des %>

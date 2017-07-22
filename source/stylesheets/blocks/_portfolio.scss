@@ -70,7 +70,10 @@
     line-height: initial;
     text-align: left;
     color: white;
-    font-family: $font-family-light;
+    &--dark {
+      @extend .portfolio__thumb-description;
+      color: $secondary;
+    }
   }
   &__thumb-client {
     position: absolute;
@@ -78,5 +81,10 @@
     left: 4rem;
     text-align: left;
     color: white;
+    font-family: $font-family-light;
+    &--dark {
+      @extend .portfolio__thumb-client;
+      color: $secondary;
+    }
   }
 }
