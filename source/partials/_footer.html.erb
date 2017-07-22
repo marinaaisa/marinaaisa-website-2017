@@ -1,51 +1,17 @@
 <footer class="footer">
 	<div class="footer__main">
 		<div class="footer__container">
-			<div class="footer__link-groups">
-				<div class="footer__link-group">
-					<h3>MarsMan</h3>
-					<ul>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-					</ul>
-				</div>
-				<div class="footer__link-group">
-					<h3>Síguenos</h3>
-					<ul>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-					</ul>
-				</div>
-				<div class="footer__link-group">
-					<h3>Idiomas</h3>
-					<ul>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-						<li><a href="#"><%= lorem.words(rand(1..3)).humanize %></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer__social">
-				<a href="/" class="footer__logo">
-					<%= svg('marsman-template') %>
-			  </a>
-			  <ul class="footer__social-icons">
-			  	<% data.social_icons.each do |s| %>
-						<li><a href="<%= s.url %>" class="footer__icon--<%= s.name %>"></a></li>
-			  	<% end %>
-			  </ul>
+			<div class="footer__contact">
+				<span class="text-negative">If you want to say “Hi or Hola <any emoji="waving-hand"></any> ” back, <br>
+				just write me a <a target="_blank" href="https://twitter.com/MarinaAisa" class="ani twitter"><span>tweet</span></a>, or send me an <a target="_blank" href="mailto:marina@marinaaisa.com" class="ani"><span>email</span></a>. <br></span>
+				As you see, I love emojis so don’t forget to add one <any emoji="winking-face"></any> .
 			</div>
 		</div>
 	</div>
 	<div class="footer__info">
 		<div class="footer__container">
 			<div class="footer__copyright">
-				© Copyright 2016, Marsman Template S.L.
+				© Copyright 2017 <span class="text-negative"> Marina Aisa</span>
 			</div>
 			<a href="#top" class="footer__top-page">
 				<i class="fa fa-angle-up" aria-hidden="true"></i>

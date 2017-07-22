@@ -2,64 +2,15 @@
 	&__main {
 		padding: 50px 0;
 		background-color: $background-secondary;
-		border-top: 1px solid $secondary-lighter;
-		border-bottom: 1px solid $secondary-lighter;
+		border-bottom: 1px solid darken($secondary-light,40%);
 	}
 
 	&__container {
 		@extend .container;
 	}
-
-	&__link-groups {
-		@include make-sm-column(6,0);
-		@include make-row(0)
+	&__contact {
+		text-align: center;
 	}
-
-	&__link-group {
-		@include make-sm-column(4);
-		margin-bottom: 2em;
-		@media (min-width: $screen-sm){
-			margin-bottom: 0;
-		}
-
-		ul {@extend .list-reset;}
-
-		a {@extend .reset-link;}
-	}
-
-	&__social {
-		margin-top: 2em;
-		@include make-sm-column(6);
-		@media (min-width: $screen-sm){
-			text-align: right;
-			margin-top: 0;
-		}
-	}
-
-	&__social-icons{
-		@extend .list-reset;
-
-		li {
-			display: inline-block;
-			@media (min-width: $screen-sm){
-				margin-left: .5em;
-			}
-		}
-	}
-
-	&__icon {
-		$icons: 'github','instagram','envelope','medium','linkedin',
-		'facebook','google-plus','twitter';
-
-		@each $icon in $icons {
-		  &--#{$icon} {
-		  	@extend .btn-icon;
-				@extend %icon;
-				@extend .fa-#{$icon};
-		  }
-		}
-	}
-
 	&__logo {
 		height: 5rem;
 		width: 18rem;
@@ -68,7 +19,7 @@
 	}
 
 	&__info {
-		background-color: $background-primary;
+		background-color: $background-secondary;
 		padding: 1.5em 0;
 	}
 
@@ -83,11 +34,15 @@
 
 	&__top-page {
 		@extend .reset-link;
+		color: $text-negative;
 		@include make-sm-column(2);
 		display: block;
 		text-align: center;
 		font-size: $fs-h1;
 		line-height: 1;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		transition: 1s;
 		@media (min-width: $screen-sm){
 			text-align: right;
 		}
