@@ -15,7 +15,6 @@
   }
 
   &__content {
-    @include make-row();
     font-size: $fs-base;
     font-family: $font-family-light;
     line-height: 1.7;
@@ -28,10 +27,12 @@
   }
 
   &__text {
-    @include make-sm-column(6);
-    display: table-cell;
-    vertical-align: middle;
-    float: none!important;
+    width: 100%;
+    @media (min-width: $screen-sm){
+      width: 30%;
+      display: table-cell;
+      vertical-align: middle;
+    }
   	&--visited {
       color: $primary;
       font-family: $font-family-base;
@@ -39,6 +40,32 @@
     &--lived {
       color: $secondary;
       font-family: $font-family-base;
+    }
+  }
+  &__map {
+    width: 100%;
+    @media (min-width: $screen-md){
+      width: 70%;
+    }
+  }
+  #map {
+    width: 220px;
+    margin: 0 auto;
+    height: 150px;
+
+    @media (min-width: $screen-xs){
+      width: 320px;
+      height: 200px;
+    }
+
+    @media (min-width: $screen-sm){
+      width: 400px;
+      height: 300px;
+    }
+
+    @media (min-width: $screen-md){
+      width: 750px;
+      height: 550px;
     }
   }
 }
