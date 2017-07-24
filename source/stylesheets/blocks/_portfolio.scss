@@ -2,15 +2,9 @@
   width: 100%;
   position: relative;
   @extend .container;
-  margin-bottom: 6rem;
 
   &__title {
-    margin: 20px 0 30px 0;
-    color: $background-secondary;
-    font-family: $font-family-semibold;
-    @media (min-width: $screen-sm){
-      margin: 70px 0 30px 0;
-    }
+    @extend .title;
   }
 
   &__content {
@@ -19,11 +13,11 @@
     padding-right: 0;
     @include make-row();
   }
-  &__item-12 {
+  &__item-full {
     @include make-sm-column(12);
     @include margin-bottom(20px);
   }
-  &__item-6 {
+  &__item-half {
     @include make-sm-column(6);
     @include margin-bottom(20px);
   }

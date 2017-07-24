@@ -1,42 +1,41 @@
 .call-to-action {
   background: $background-primary-darker;
 
-  &__content {
+  &__container {
     @extend .container;
-    display: table;
     position: relative;
-    height: 17rem;
+    @media (min-width: $screen-sm){
+      display: table;
+    }
   }
   &__image {
     display: table-cell;
     vertical-align: middle;
-    padding: 5rem 5rem 5rem 0;
+    padding: 2rem 0;
+    text-align: center;
+    @media (min-width: $screen-sm){
+      display: table-cell;
+      text-align: left;
+      padding: 5rem 5rem 5rem 0;
+    }
     img {
       width: 50%;
     }
   }
-  &__text--dribbble {
+  &__text {
     width: 100%;
-    display: table-cell;
     vertical-align: middle;
     text-align: center;
     position: relative;
-    z-index: 1000;
+    padding-bottom: 2rem;
     p {
-      background-color: $background-primary;
-      padding: 2rem;
       margin: 0;
     }
-  }
-  &__text--professionals {
-    width: 40%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
-    position: relative;
-    z-index: 1000;
-    p {
-      margin: 0;
+    @media (min-width: $screen-sm){
+      width: 40%;
+      display: table-cell;
+      text-align: right;
+      padding-bottom: 0rem;
     }
   }
 }

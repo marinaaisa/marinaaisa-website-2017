@@ -74,5 +74,6 @@
   .hero-text--typing::after {
     content: '|';
     animation: blink 500ms infinite;
+    color: $primary;
   }
 }

@@ -24,11 +24,11 @@
 	}
 
 	&__copyright {
-		@include make-sm-column(10);
 		line-height: $fs-h1;
 		text-align: center;
 		@media (min-width: $screen-sm) {
 			text-align: inherit;
+			@include make-sm-column(10);
 		}
 	}
 

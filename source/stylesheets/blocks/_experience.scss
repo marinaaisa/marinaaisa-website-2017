@@ -7,12 +7,7 @@
   }
 
   &__title {
-    margin: 2rem 0 5rem 0;
-    color: $secondary;
-    font-family: $font-family-semibold;
-    @media (min-width: $screen-sm){
-      margin: 7rem 0 5rem 0;
-    }
+    @extend .title;
   }
 
   &__content {
@@ -24,8 +19,8 @@
       content: "";
       position: absolute;
       top: 0;
-      bottom: 13rem;
-      left: 21.2%;
+      bottom: 11rem;
+      left: 21%;
       width: 2px;
       display: block;
       margin-left: -1.5px;
@@ -37,8 +32,8 @@
 
     > li {
       position: relative;
-      margin-bottom: 50px;
-      min-height: 50px;
+      margin-bottom: 1rem;
+      min-height: 5rem;
 
       &:before,&:after {
         content: " ";
@@ -47,6 +42,9 @@
 
       &:after {
         clear: both;
+      }
+      @media (min-width: $screen-sm){
+        margin-bottom: 5rem;
       }
     }
   }
@@ -113,7 +111,6 @@
     color: $secondary;
   }
   &__description {
-    font-family: $font-family-light;
     margin-top: 2rem;
     @media (min-width: $screen-sm){
       margin-top: 0;
@@ -121,7 +118,6 @@
   }
   &__learnt {
     color: $secondary;
-    font-family: $font-family-base;
   }
   &__place,
   &__time {
@@ -136,7 +132,8 @@
       float: initial;
     }
   }
-  &__position {
+  &__position,
+  &__studies {
     @media (max-width: $screen-sm){
       padding: .3rem 0 0 7rem;
       min-height: 5rem;
