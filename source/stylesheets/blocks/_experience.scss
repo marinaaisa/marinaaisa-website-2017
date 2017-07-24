@@ -19,18 +19,20 @@
     vertical-align: middle;
     list-style: none;
     position: relative;
-    @extend .row;
 
     &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 13rem;
-    left: 22.5%;
-    width: 2px;
-    display: block;
-    margin-left: -1.5px;
-    background-color: $secondary-lighter;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 13rem;
+      left: 21.2%;
+      width: 2px;
+      display: block;
+      margin-left: -1.5px;
+      background-color: $secondary-lighter;
+      @media (max-width: $screen-sm){
+        display: none;
+      }
     }
 
     > li {
@@ -52,6 +54,10 @@
   &__time-place {
     @include make-sm-column(2, 0);
     padding-top: 1.5rem;
+    margin-bottom: 1rem;
+    @media (min-width: $screen-sm){
+      margin-bottom: 0;
+    }
   }
   &__time {
     .active {
@@ -63,15 +69,16 @@
     @include make-sm-column(9, 0);
     position: relative;
     width: 100%;
-    padding: 0 0 0 2.7rem;
+    padding: 0;
     text-align: left;
+    @media (min-width: $screen-sm){
+      padding: 0 0 0 2.7rem;
+    }
   }
   &__image {
     position: relative;
+    @include make-column(2, 0);
     @include make-sm-column(1, 0);
-    @media (max-width: $screen-sm){
-      display: none;
-    }
     &:after {
       content: " ";
       display: block;
@@ -107,9 +114,35 @@
   }
   &__description {
     font-family: $font-family-light;
+    margin-top: 2rem;
+    @media (min-width: $screen-sm){
+      margin-top: 0;
+    }
   }
   &__learnt {
     color: $secondary;
     font-family: $font-family-base;
   }
+  &__place,
+  &__time {
+    display: inline-block;
+    @media (min-width: $screen-sm){
+      display: block;
+    }
+  }
+  &__time {
+    float: right;
+    @media (min-width: $screen-sm){
+      float: initial;
+    }
+  }
+  &__position {
+    @media (max-width: $screen-sm){
+      padding: .3rem 0 0 7rem;
+      min-height: 5rem;
+    }
+  }
+}
+ul {
+  padding-left: 0;
 }
