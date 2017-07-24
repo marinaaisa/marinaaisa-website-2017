@@ -8,14 +8,14 @@
 
 (function() {
   $.jribbble.setToken('a3d833521e6c04af73b5b295af567cb8c0034320730242eb13f10e0dbaadde60');
-    $.jribbble.users('marinaaisa').shots({per_page: 12}).then(function(shots) {
+    $.jribbble.users('marinaaisa').shots({per_page: 6}).then(function(shots) {
   var html = [];
   
   shots.forEach(function(shot) {
-        html.push('<div class="col-xs-4"><a href="' + shot.html_url + '"class="portfolio-link" target="_blank">');
+        html.push('<div class="dribbble__post"><a href="' + shot.html_url + '"class="portfolio-link" target="_blank">');
         html.push('<img src="' + shot.images.hidpi + '" class="img-responsive" alt="' + shot.title + '"></a></div>');
       });
 
-      $('.slides').html(html.join(''));
+      $('.dribbble__posts').html(html.join(''));
     });
 })();
