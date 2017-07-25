@@ -1,21 +1,14 @@
 - name: decidim
   col: full
   img: decidim.jpg
-  des: Decidim.cat – website project
-  client: Barcelona City Hall (working in MarsBased)
-  color_bg: "#FCE4E0"
-  color_text_dark: true
-- name: decidim
+  des: Decidim.cat – Website
+  client: Barcelona City Hall while working in MarsBased.
+  color_bg: "#EC859A"
+  disabled: true
+- name: marsman
   col: full
-  img: decidim.jpg
-  des: Decidim.cat whole website project
-  client: Barcelona City Hall (working in MarsBased)
-  color_bg: "#D90B36"
-  color_text_dark: false
-- name: decidim
-  col: full
-  img: decidim.jpg
-  des: Decidim.cat whole website project
-  client: Barcelona City Hall (working in MarsBased)
-  color_bg: "#FCE4E0"
-  color_text_dark: true
+  img: marsman.jpg
+  des: MarsMan – Front-end framework
+  client: Internal project for MarsBased.
+  color_bg: "#F3A59D"
+  disabled: true

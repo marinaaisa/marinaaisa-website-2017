@@ -22,13 +22,13 @@
     @include margin-bottom(20px);
   }
   &__client {
-    float: right;
     @media (min-width: $screen-sm){
       display: none;
     }
   }
   &__description {
-    float: left;
+    color: $secondary;
+    padding-top: 1rem;
     @media (min-width: $screen-sm){
       display: none;
     }

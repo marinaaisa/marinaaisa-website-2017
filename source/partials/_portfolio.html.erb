@@ -1,9 +1,9 @@
 <% data.portfolio.each do |s| %>
   <div class="portfolio__item-<%= s.col %>">
-    <a href="<%= s.url %>" class="portfolio__thumb-inner">
+    <a href="<%= s.url %>" class="portfolio__thumb-inner <% if s.disabled %>disabled<% end %>">
       <div class="portfolio__thumb-hover" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, <%= s.color_bg %> 70%);">
         <h3 class="portfolio__thumb-description<% if s.color_text_dark %>--dark<% end %>">
-          <%= s.des %>
+          <%= s.des %> <% if s.disabled %>(Extended content coming soon)<% end %>
         </h3>
         <h3 class="portfolio__thumb-client<% if s.color_text_dark %>--dark<% end %>">
           Client: <%= s.client %>
