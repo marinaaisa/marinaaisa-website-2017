@@ -20,6 +20,9 @@
     p {
       margin-bottom: 0;
     }
+    &--important {
+      color: $secondary;
+    }
   }
 
   &__profile {

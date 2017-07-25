@@ -12,3 +12,10 @@
   client: Internal project for MarsBased.
   color_bg: "#F3A59D"
   disabled: true
+- name: dreamcinema
+  col: full
+  img: dreamcinema.jpg
+  des: Dreamcinemavr.com – Website
+  client: The Dream VR
+  color_bg: "#C7A2EB"
+  disabled: true
