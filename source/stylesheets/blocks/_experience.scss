@@ -19,14 +19,18 @@
       content: "";
       position: absolute;
       top: 0;
-      bottom: 11rem;
+      bottom: 14rem;
       left: 21%;
       width: 2px;
       display: block;
       margin-left: -1.5px;
+      display: none;
       background-color: $secondary-lighter;
-      @media (max-width: $screen-sm){
-        display: none;
+      @media (min-width: $screen-sm){
+        display: initial;
+      }
+      @media (min-width: $screen-md){
+        bottom: 11rem;
       }
     }
 
@@ -134,9 +138,11 @@
   }
   &__position,
   &__studies {
-    @media (max-width: $screen-sm){
-      padding: .3rem 0 0 7rem;
-      min-height: 5rem;
+    padding: .3rem 0 0 7rem;
+    min-height: 5rem;
+    @media (min-width: $screen-sm){
+      padding: 0;
+      min-height: 0;
     }
   }
 }
