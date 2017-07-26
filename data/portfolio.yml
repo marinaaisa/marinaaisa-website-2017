@@ -1,9 +1,16 @@
-- name: decidim
+- name: dreamios
   col: full
-  img: decidim.png
-  des: Decidim.cat – Website
-  client: Barcelona City Hall while working in MarsBased.
-  color_bg: "#EC859A"
+  img: dreamios.jpg
+  des: The Dream VR – iOS app
+  client: The Dream VR
+  color_bg: "#5F93FB"
+  disabled: true
+- name: dreamcinema
+  col: full
+  img: dreamcinema.jpg
+  des: Dreamcinemavr.com – Website
+  client: The Dream VR
+  color_bg: "#C7A2EB"
   disabled: true
 - name: marsman
   col: full
@@ -12,10 +19,10 @@
   client: Internal project for MarsBased.
   color_bg: "#F3A59D"
   disabled: true
-- name: dreamcinema
+- name: decidim
   col: full
-  img: dreamcinema.jpg
-  des: Dreamcinemavr.com – Website
-  client: The Dream VR
-  color_bg: "#C7A2EB"
+  img: decidim.png
+  des: Decidim.cat – Website
+  client: Barcelona City Hall while working in MarsBased.
+  color_bg: "#EC859A"
   disabled: true
