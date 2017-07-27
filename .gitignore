@@ -21,3 +21,6 @@
 
 # Ignore Project Files
 /project_files
+
+# Ignore Video File
+/source/images/aframe/player/espanyol.mp4
