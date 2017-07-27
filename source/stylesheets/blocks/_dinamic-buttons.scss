@@ -1,0 +1,40 @@
+.give-five {
+  position: relative;
+}
+.hide{
+  opacity:0;
+}
+
+#button3, #button2{
+  -webkit-transition: -webkit-transform .2s; /* Safari */
+    transition: transform .2s;
+}
+#button1{
+  z-index:10;
+  -webkit-transition: opacity .2s; /* Safari */
+  transition: opacity .2s;
+}
+
+.animateToRight{
+  -webkit-transform: translate(60px); /* Safari */
+    transform: translate(60px);
+}
+.animateToLeft{
+    -webkit-transform: translate(-60px); /* Safari */
+    transform: translate(-60px);
+}
+
+button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
