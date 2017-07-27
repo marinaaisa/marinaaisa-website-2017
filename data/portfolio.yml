@@ -1,28 +1,35 @@
+- name: playervr
+  col: full
+  img: player-dream.jpg
+  des: VR and 360º Player – Designed & Prototyped with A-Frame, WebVR framework in 360º <br> (Loading can be slow 😅)
+  client: The Dream VR
+  color_bg: "#5a46ff"
+  url: "/vrplayer-thedreamvr"
 - name: dreamios
   col: full
   img: dreamios.jpg
-  des: The Dream VR – iOS app
+  des: Log in and sign up pages for iOS app – Designed
   client: The Dream VR
   color_bg: "#5F93FB"
-  disabled: true
+  url: "https://itunes.apple.com/es/app/the-dream-vr/id1179371355?l=en&mt=8"
 - name: dreamcinema
   col: full
   img: dreamcinema.jpg
-  des: Dreamcinemavr.com – Website
+  des: Dream Cinema VR Website – Designed & Coded
   client: The Dream VR
   color_bg: "#C7A2EB"
-  disabled: true
+  url: "http://dreamcinemavr.com/"
 - name: marsman
   col: full
   img: marsman.jpg
-  des: MarsMan – Front-end framework
-  client: Internal project for MarsBased.
+  des: MarsMan Front-end framework – Designed
+  client: Internal project for MarsBased
   color_bg: "#F3A59D"
-  disabled: true
+  url: "https://marsman.marsbased.com/"
 - name: decidim
   col: full
   img: decidim.png
-  des: Decidim.cat – Website
-  client: Barcelona City Hall while working in MarsBased.
+  des: Decidim.cat Website – Designed (First version)
+  client: Barcelona City Hall while working in MarsBased
   color_bg: "#EC859A"
-  disabled: true
+  url: "https://www.decidim.barcelona/"
