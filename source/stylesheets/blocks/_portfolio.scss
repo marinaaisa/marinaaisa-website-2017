@@ -58,6 +58,9 @@
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
+    @media (max-width: $screen-sm){
+      display: none;
+    }
   }
 
   &__thumb-description {
