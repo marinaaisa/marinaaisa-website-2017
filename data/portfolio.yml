@@ -1,7 +1,7 @@
 - name: playervr
   col: full
   img: player-dream.jpg
-  des: VR and 360º Player – Designed & Prototyped with A-Frame, WebVR framework in 360º <br> (Loading can be slow 😅)
+  des: VR and 360º Player – Designed & Prototyped with A-Frame, WebVR framework in 360º <br> (Loading can be slow 😅 )
   client: The Dream VR
   color_bg: "#5a46ff"
   url: "/vrplayer-thedreamvr"
