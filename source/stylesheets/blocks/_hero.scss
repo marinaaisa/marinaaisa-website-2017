@@ -75,4 +75,10 @@
     animation: blink 500ms infinite;
     color: $primary;
   }
+  &__waving {
+    width: 39px;
+    @media (min-width: $screen-sm){
+      width: 36px;
+    }
+  }
 }
