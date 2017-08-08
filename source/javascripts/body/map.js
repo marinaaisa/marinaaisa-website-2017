@@ -22,6 +22,7 @@ $(function(){
           FI: 'LIVED',
           ES: 'LIVED',
           AT: 'VISITED',
+          PL: 'VISITED',
           BG: 'VISITED',
           CZ: 'VISITED',
           EE: 'VISITED',
