@@ -37,6 +37,7 @@ $(function(){
           SE: 'VISITED',
           CH: 'VISITED',
           UA: 'VISITED',
+          US: 'VISITED',
           GB: 'VISITED',
           ID: 'VISITED',
           MY: 'VISITED',
