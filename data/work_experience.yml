@@ -1,3 +1,13 @@
+- company: Holaluz
+  companyurl: https://www.holaluz.com/
+  position: UX/UI Engineer
+  description: Mix of UX/UI Designer and Front-End Developer at Holaluz, a 100% renewable and online power company in Spain.
+  learnt: "#ProductDesign #Front-endDevelopment #ProductCompany #PowerIndustry"
+  place: Barcelona, ESP
+  starting_time: Oct’17
+  active: active
+  finish_time: today
+  image: holaluz
 - company: The Dream VR
   companyurl: http://thedreamvr.com/
   position: VR / Mobile Product Designer
@@ -5,8 +15,7 @@
   learnt: "#VR #VRDesign #UnityGraphics #A-Frame #VRPrototyping"
   place: Barcelona, ESP
   starting_time: Feb’17
-  finish_time: today
-  active: active
+  finish_time: Oct’17
   image: thedream
 - company: MarsBased
   companyurl: https://marsbased.com/

@@ -21,7 +21,7 @@
     </div>
     <div class="experience__description">
       <p>
-        <%= s.description %> Here is where I learnt <span class="experience__learnt"><%= s.learnt %></span>
+        <%= s.description %> Here is where <% if s.active %>I'm learning<% else %>I learnt<% end %> <span class="experience__learnt"><%= s.learnt %></span>
       </p>
     </div>
   </div>
